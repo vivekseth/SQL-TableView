@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3298ED59157156270073AAC9 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3298ED58157156270073AAC9 /* CustomCell.m */; };
 		329FD1FD156C976A0086CC44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329FD1FC156C976A0086CC44 /* UIKit.framework */; };
 		329FD1FF156C976A0086CC44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329FD1FE156C976A0086CC44 /* Foundation.framework */; };
 		329FD201156C976A0086CC44 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329FD200156C976A0086CC44 /* CoreGraphics.framework */; };
@@ -14,23 +15,50 @@
 		329FD209156C976A0086CC44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 329FD208156C976A0086CC44 /* main.m */; };
 		329FD20D156C976A0086CC44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 329FD20C156C976A0086CC44 /* AppDelegate.m */; };
 		329FD210156C976A0086CC44 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329FD20E156C976A0086CC44 /* MainStoryboard.storyboard */; };
-		329FD213156C976A0086CC44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329FD212156C976A0086CC44 /* ViewController.m */; };
+		329FD21A156C97850086CC44 /* chinook.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 329FD219156C97850086CC44 /* chinook.sqlite */; };
+		329FD21D156C97940086CC44 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 329FD21C156C97940086CC44 /* Singleton.m */; };
+		329FD228156C979C0086CC44 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 329FD21F156C979C0086CC44 /* FMDatabase.m */; };
+		329FD229156C979C0086CC44 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 329FD221156C979C0086CC44 /* FMResultSet.m */; };
+		329FD22A156C979C0086CC44 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 329FD223156C979C0086CC44 /* FMDatabasePool.m */; };
+		329FD22B156C979C0086CC44 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 329FD225156C979C0086CC44 /* FMDatabaseAdditions.m */; };
+		329FD22C156C979C0086CC44 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 329FD227156C979C0086CC44 /* FMDatabaseQueue.m */; };
+		329FD22F156C97B90086CC44 /* SQLResultTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 329FD22E156C97B90086CC44 /* SQLResultTable.m */; };
+		329FD231156C98100086CC44 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 329FD230156C98100086CC44 /* libsqlite3.0.dylib */; };
+		329FD234156C98710086CC44 /* DVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 329FD233156C98710086CC44 /* DVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3298ED57157156270073AAC9 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		3298ED58157156270073AAC9 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		329FD1F8156C976A0086CC44 /* SQL+TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SQL+TableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		329FD1FC156C976A0086CC44 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		329FD1FE156C976A0086CC44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		329FD200156C976A0086CC44 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		329FD204156C976A0086CC44 /* SQL+TableView-Info.plist */ = {isa = PBXFileReference; path = "SQL+TableView-Info.plist"; sourceTree = "<group>"; };
+		329FD204156C976A0086CC44 /* SQL+TableView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SQL+TableView-Info.plist"; sourceTree = "<group>"; };
 		329FD206156C976A0086CC44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		329FD208156C976A0086CC44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		329FD20A156C976A0086CC44 /* SQL+TableView-Prefix.pch */ = {isa = PBXFileReference; path = "SQL+TableView-Prefix.pch"; sourceTree = "<group>"; };
-		329FD20B156C976A0086CC44 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		329FD20A156C976A0086CC44 /* SQL+TableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQL+TableView-Prefix.pch"; sourceTree = "<group>"; };
+		329FD20B156C976A0086CC44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		329FD20C156C976A0086CC44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		329FD20F156C976A0086CC44 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		329FD211156C976A0086CC44 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		329FD212156C976A0086CC44 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		329FD219156C97850086CC44 /* chinook.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = chinook.sqlite; sourceTree = "<group>"; };
+		329FD21B156C97940086CC44 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		329FD21C156C97940086CC44 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		329FD21E156C979C0086CC44 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		329FD21F156C979C0086CC44 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		329FD220156C979C0086CC44 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		329FD221156C979C0086CC44 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		329FD222156C979C0086CC44 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		329FD223156C979C0086CC44 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		329FD224156C979C0086CC44 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		329FD225156C979C0086CC44 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		329FD226156C979C0086CC44 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		329FD227156C979C0086CC44 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		329FD22D156C97B90086CC44 /* SQLResultTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLResultTable.h; sourceTree = "<group>"; };
+		329FD22E156C97B90086CC44 /* SQLResultTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLResultTable.m; sourceTree = "<group>"; };
+		329FD230156C98100086CC44 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		329FD232156C98710086CC44 /* DVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVC.h; sourceTree = "<group>"; };
+		329FD233156C98710086CC44 /* DVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329FD231156C98100086CC44 /* libsqlite3.0.dylib in Frameworks */,
 				329FD1FD156C976A0086CC44 /* UIKit.framework in Frameworks */,
 				329FD1FF156C976A0086CC44 /* Foundation.framework in Frameworks */,
 				329FD201156C976A0086CC44 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +79,8 @@
 		329FD1ED156C976A0086CC44 = {
 			isa = PBXGroup;
 			children = (
+				329FD230156C98100086CC44 /* libsqlite3.0.dylib */,
+				329FD219156C97850086CC44 /* chinook.sqlite */,
 				329FD202156C976A0086CC44 /* SQL+TableView */,
 				329FD1FB156C976A0086CC44 /* Frameworks */,
 				329FD1F9156C976A0086CC44 /* Products */,
@@ -77,11 +108,17 @@
 		329FD202156C976A0086CC44 /* SQL+TableView */ = {
 			isa = PBXGroup;
 			children = (
+				32D3ADB6156CF80900FB5A60 /* Singleton */,
+				32D3ADB4156CF7FB00FB5A60 /* FMDB */,
 				329FD20B156C976A0086CC44 /* AppDelegate.h */,
 				329FD20C156C976A0086CC44 /* AppDelegate.m */,
 				329FD20E156C976A0086CC44 /* MainStoryboard.storyboard */,
-				329FD211156C976A0086CC44 /* ViewController.h */,
-				329FD212156C976A0086CC44 /* ViewController.m */,
+				329FD22D156C97B90086CC44 /* SQLResultTable.h */,
+				329FD22E156C97B90086CC44 /* SQLResultTable.m */,
+				329FD232156C98710086CC44 /* DVC.h */,
+				329FD233156C98710086CC44 /* DVC.m */,
+				3298ED57157156270073AAC9 /* CustomCell.h */,
+				3298ED58157156270073AAC9 /* CustomCell.m */,
 				329FD203156C976A0086CC44 /* Supporting Files */,
 			);
 			path = "SQL+TableView";
@@ -96,6 +133,32 @@
 				329FD20A156C976A0086CC44 /* SQL+TableView-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32D3ADB4156CF7FB00FB5A60 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				329FD21E156C979C0086CC44 /* FMDatabase.h */,
+				329FD21F156C979C0086CC44 /* FMDatabase.m */,
+				329FD220156C979C0086CC44 /* FMResultSet.h */,
+				329FD221156C979C0086CC44 /* FMResultSet.m */,
+				329FD222156C979C0086CC44 /* FMDatabasePool.h */,
+				329FD223156C979C0086CC44 /* FMDatabasePool.m */,
+				329FD224156C979C0086CC44 /* FMDatabaseAdditions.h */,
+				329FD225156C979C0086CC44 /* FMDatabaseAdditions.m */,
+				329FD226156C979C0086CC44 /* FMDatabaseQueue.h */,
+				329FD227156C979C0086CC44 /* FMDatabaseQueue.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		32D3ADB6156CF80900FB5A60 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				329FD21B156C97940086CC44 /* Singleton.h */,
+				329FD21C156C97940086CC44 /* Singleton.m */,
+			);
+			name = Singleton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +213,7 @@
 			files = (
 				329FD207156C976A0086CC44 /* InfoPlist.strings in Resources */,
 				329FD210156C976A0086CC44 /* MainStoryboard.storyboard in Resources */,
+				329FD21A156C97850086CC44 /* chinook.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +226,15 @@
 			files = (
 				329FD209156C976A0086CC44 /* main.m in Sources */,
 				329FD20D156C976A0086CC44 /* AppDelegate.m in Sources */,
-				329FD213156C976A0086CC44 /* ViewController.m in Sources */,
+				329FD21D156C97940086CC44 /* Singleton.m in Sources */,
+				329FD228156C979C0086CC44 /* FMDatabase.m in Sources */,
+				329FD229156C979C0086CC44 /* FMResultSet.m in Sources */,
+				329FD22A156C979C0086CC44 /* FMDatabasePool.m in Sources */,
+				329FD22B156C979C0086CC44 /* FMDatabaseAdditions.m in Sources */,
+				329FD22C156C979C0086CC44 /* FMDatabaseQueue.m in Sources */,
+				329FD22F156C97B90086CC44 /* SQLResultTable.m in Sources */,
+				329FD234156C98710086CC44 /* DVC.m in Sources */,
+				3298ED59157156270073AAC9 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +311,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SQL+TableView/SQL+TableView-Prefix.pch";
 				INFOPLIST_FILE = "SQL+TableView/SQL+TableView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -250,6 +323,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SQL+TableView/SQL+TableView-Prefix.pch";
 				INFOPLIST_FILE = "SQL+TableView/SQL+TableView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,6 +348,7 @@
 				329FD218156C976A0086CC44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
